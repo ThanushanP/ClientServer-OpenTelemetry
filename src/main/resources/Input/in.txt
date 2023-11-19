@@ -1,0 +1,1 @@
+This folder is where Input files are created after running random.js
