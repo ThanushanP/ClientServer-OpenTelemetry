@@ -1,0 +1,31 @@
+
+# Jaeger Agent Configuration
+agent:
+  # Agent hostname and port
+  hostname: localhost
+  port: 6831
+
+# Jaeger Collector Configuration
+collector:
+  # Collector hostname and port
+  hostname: localhost
+  port: 14250
+
+# Jaeger Storage Configuration
+storage:
+  # Storage backend (Cassandra)
+  type: cassandra
+  options:
+    # Cassandra-specific options
+    cassandra:
+      servers: localhost
+      keyspace: jaeger_v1_test
+
+# Jaeger UI Configuration
+query:
+  # Query service hostname and port
+  hostname: localhost
+  port: 16686
+
+# Jaeger Service Name (used in traces)
+service_name: my-service
